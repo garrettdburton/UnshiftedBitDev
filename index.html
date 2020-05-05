@@ -17,10 +17,15 @@
         <!-- Footer CSS -->
         <link href="css/footer.css" rel="stylesheet">
         <style>
-
+            .container-fluid {
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+            }
 
             .navbar{
-                
+
             }
 
             .navbar a {
@@ -38,6 +43,11 @@
             .card{
                 border-radius: 20px;
             }
+            
+            .card-contact{
+                width: 300px;
+            }
+            
 
             .card .card-img-top{
                 border-radius: 20px;
@@ -68,6 +78,9 @@
                 color: black;
                 font-size: 30px;
             }
+            .bg-darkgray{
+                background-color:#26272b;
+            }
 
             #homeDiv {
                 background-color:#26272b;
@@ -81,11 +94,6 @@
                 background-color: black;
 
             }
-
-            #contactDiv{
-                background-color: black;
-            }
-
             #footerDiv{
                 background-color: black;
                 padding: 1em;
@@ -126,7 +134,7 @@
             </div>
         </nav>
         <div class="container-fluid">
-            <div class="row justify-content-center mb-3" id="homeDiv">
+            <div class="row justify-content-center" id="homeDiv">
                 <div class="col-auto">
                     <!-- Jumbrotron -->
                     <div class="jumbotron jumbotron-fluid" >
@@ -154,21 +162,22 @@
 
             <!-- Client Carousel -->
             <div class="row" id="clientDiv">
+                <h3 class="card-header text-white mx-auto">Clients</h3>
                 <div id="carouselIndicators" class="carousel slide mx-auto" data-ride="carousel">
-                    <ol class="carousel-indicators">
+                    <!--<ol class="carousel-indicators">
                         <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                    </ol>
+                    </ol>-->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row justify-content-center mx-auto mb-3" id="clients" >
                                 <div class="card m-3">
                                     <div class="card-body">
-                                        <div class="row">
+                                        <div class="row justify-content-center">
                                             <!-- The Barber Card -->
-                                            <div class="col"> 
+                                            <div class="col-md-3 mx-auto"> 
                                                 <a href="https://www.thebarber.business/" target="_blank">
-                                                    <div class="card text-white bg-dark mb-3 " style="max-width: 18rem;">
+                                                    <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
                                                         <img class="card-img-top" src="images/thebarber.jpeg" alt="thebarber">
                                                         <div class="card-body">
                                                             <h5 class="card-title">The Barber</h5>
@@ -179,9 +188,9 @@
                                             </div>
 
                                             <!-- The Barber Card -->
-                                            <div class="col"> 
+                                            <div class="col-md-3 mx-auto"> 
                                                 <a href="https://www.thebarber.business/" target="_blank">
-                                                    <div class="card text-white bg-dark mb-3 " style="max-width: 18rem;">
+                                                    <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
                                                         <img class="card-img-top" src="images/thebarber.jpeg"alt="thebarber">
                                                         <div class="card-body">
                                                             <h5 class="card-title">The Barber</h5>
@@ -192,9 +201,9 @@
                                             </div>
 
                                             <!-- The Barber Card -->
-                                            <div class="col"> 
+                                            <div class="col-md-3 mx-auto"> 
                                                 <a href="https://www.thebarber.business/" target="_blank">
-                                                    <div class="card text-white bg-dark mb-3 " style="max-width: 18rem;">
+                                                    <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
                                                         <img class="card-img-top" src="images/thebarber.jpeg"alt="thebarber">
                                                         <div class="card-body">
                                                             <h5 class="card-title">The Barber</h5>
@@ -208,81 +217,57 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="row justify-content-center mx-auto mb-3" id="clients" >
-                                <div class="card m-3">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <!-- The Barber Card -->
-                                            <div class="col"> 
-                                                <a href="https://www.thebarber.business/" target="_blank">
-                                                    <div class="card text-white bg-dark mb-3 " style="max-width: 18rem;">
-                                                        <img class="card-img-top" src="images/thebarber.jpeg" alt="thebarber">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">The Barber</h5>
-                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse faucibus interdum posuere. Fames ac turpis egestas sed tempus urna. Mi proin sed libero enim sed. Porttitor massa id neque aliquam vestibulum. Sagittis purus sit amet volutpat. Adipiscing commodo elit at imperdiet dui accumsan sit. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Aliquam sem et tortor consequat. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis..</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                            <!-- The Barber Card -->
-                                            <div class="col"> 
-                                                <a href="https://www.thebarber.business/" target="_blank">
-                                                    <div class="card text-white bg-dark mb-3 " style="max-width: 18rem;">
-                                                        <img class="card-img-top" src="images/thebarber.jpeg"alt="thebarber">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">The Barber</h5>
-                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse faucibus interdum posuere. Fames ac turpis egestas sed tempus urna. Mi proin sed libero enim sed. Porttitor massa id neque aliquam vestibulum. Sagittis purus sit amet volutpat. Adipiscing commodo elit at imperdiet dui accumsan sit. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Aliquam sem et tortor consequat. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis..</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                            <!-- The Barber Card -->
-                                            <div class="col"> 
-                                                <a href="https://www.thebarber.business/" target="_blank">
-                                                    <div class="card text-white bg-dark mb-3 " style="max-width: 18rem;">
-                                                        <img class="card-img-top" src="images/thebarber.jpeg"alt="thebarber">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">The Barber</h5>
-                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse faucibus interdum posuere. Fames ac turpis egestas sed tempus urna. Mi proin sed libero enim sed. Porttitor massa id neque aliquam vestibulum. Sagittis purus sit amet volutpat. Adipiscing commodo elit at imperdiet dui accumsan sit. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Aliquam sem et tortor consequat. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis..</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                            
-
-                        </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                    <!--<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
-                    </a>
+                    </a>-->
                 </div>
             </div>
 
             <!-- Contact -->
-            <div class="row justify-content-center mb-3" id="contactDiv">
-                <div class="col">
-                    <div class="card m-3">
+            <div class="row justify-content-center pb-3 bg-darkgray" id="contactDiv">
+                <div class="row">
+                    <h4 class="card-header text-white"> Contact</h4>
+                </div>
+                <div class="col-md-3 mx-auto mb-1">
+                    <div class="card card-contact mx-auto">
                         <div class="card-body map-container">
-                            <h5 class="card-title text-center contact-title">Contact</h5>
-
+                            <i class="fas fa-map-marker text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Location</h4>
+                            <hr class="my-4">
                             <!--Google map-->
-                            <div class="col-md-4">
-                                <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
-                                    <iframe src="https://maps.google.com/maps?q=Bloomington&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                                            style="border:0" allowfullscreen></iframe>
-                                </div>
+                            <button class="btn btn-primary">Show Map</button>
+                            <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+                                <iframe src="https://maps.google.com/maps?q=Bloomington&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                                        style="border:0" allowfullscreen></iframe>
                             </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-3 mx-auto mb-1">
+                    <div class="card card-contact mx-auto">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50">
+                                <a href="#">garrettdburton@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mx-auto mb-1">
+                    <div class="card card-contact mx-auto">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50">(123) 456-7892 </div>
                         </div>
                     </div>
                 </div>
@@ -292,43 +277,6 @@
         <!-- Site footer -->
         <nav class="site-footer p-3">
             <div class="container">
-                <div class="row contact-section p-3" id="contact">
-
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Location</h4>
-                                <hr class="my-4">
-                                <div class="small text-black-50">Bloomington, IN 47401</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
-                                <hr class="my-4">
-                                <div class="small text-black-50">
-                                    <a href="#">garrettdburton@gmail.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
-                                <hr class="my-4">
-                                <div class="small text-black-50">(123) 456-7892 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <h6>About</h6>
@@ -377,12 +325,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script>
-
             $(document).ready(function() {
-                $("#aboutDiv").hide();
-                $("#clientDiv").hide();
-                $("#contactDiv").hide();
+                $('.carousel').carousel('stop');
+                $("#map-container-section").hide();
+                //$("#aboutDiv").hide();
+                //$("#clientDiv").hide();
+                //$("#contactDiv").hide();
             });
+            /*
+
 
             $("#aboutBtn").click(function(){
                 $("#homeLi").removeClass("active");
@@ -433,7 +384,7 @@
 
             $("#show").click(function(){
                 $("p").show();
-            });
+            });*/
         </script>
     </body>
 </html>
