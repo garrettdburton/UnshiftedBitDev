@@ -13,17 +13,14 @@
 
         <!-- Material Design Bootstrap -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
-        <style>
-            body {
-                height: 100%;
-            }
 
-            .container-fluid{
-                background-color: white;
-            }
+        <!-- Footer CSS -->
+        <link href="css/footer.css" rel="stylesheet">
+        <style>
+
 
             .navbar{
-
+                
             }
 
             .navbar a {
@@ -73,7 +70,7 @@
             }
 
             #homeDiv {
-                background-color: black;
+                background-color:#26272b;
             }
 
             #aboutDiv{
@@ -91,18 +88,18 @@
 
             #footerDiv{
                 background-color: black;
-             padding: 1em;
-             position: absolute;
-             left: 0;
-             right: 0;
-             bottom: 0;
+                padding: 1em;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
             }
-            
+
             body{
                 padding-bottom:0px;
             }
-            
-            
+
+
         </style>
         <title>Unshifted Bit Development</title>
     </head>
@@ -129,8 +126,8 @@
             </div>
         </nav>
         <div class="container-fluid">
-            <div class="row justify-content-center mx-auto mb-3" id="homeDiv">
-                <div class="col">
+            <div class="row justify-content-center mb-3" id="homeDiv">
+                <div class="col-auto">
                     <!-- Jumbrotron -->
                     <div class="jumbotron jumbotron-fluid" >
                         <div class="container text-center">
@@ -285,45 +282,94 @@
                                     <iframe src="https://maps.google.com/maps?q=Bloomington&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
                                             style="border:0" allowfullscreen></iframe>
                                 </div>
-
-
                             </div>
-
                         </div>
-
                     </div>
                 </div>
-
             </div>
-
-            <!-- Footer -->
-            <footer class="page-footer mb-3" id="footerDiv">
-                <div class="row">
-                    <!-- Social buttons -->
-                    <ul class="list-unstyled list-inline ml-auto mr-5 mt-2">
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-fb mx-1">
-                                <i class="fab fa-facebook-f"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-tw mx-1">
-                                <i class="fab fa-twitter"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-li mx-1">
-                                <i class="fab fa-linkedin-in"> </i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Copyright -->
-                <div class="footer-copyright text-white text-center py-3">© 2018 Copyright:
-                </div>
-            </footer>
-
         </div>
+
+        <!-- Site footer -->
+        <nav class="site-footer p-3">
+            <div class="container">
+                <div class="row contact-section p-3" id="contact">
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Location</h4>
+                                <hr class="my-4">
+                                <div class="small text-black-50">Bloomington, IN 47401</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4">
+                                <div class="small text-black-50">
+                                    <a href="#">garrettdburton@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4">
+                                <div class="small text-black-50">(123) 456-7892 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h6>About</h6>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse faucibus interdum posuere. Fames ac turpis egestas sed tempus urna. Mi proin sed libero enim sed. Porttitor massa id neque aliquam vestibulum. Sagittis purus sit amet volutpat. Adipiscing commodo elit at imperdiet dui accumsan sit. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Aliquam sem et tortor consequat. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis..</p>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Logo</h6>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Contribute</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+                            <a href="#">Unshifted Bit Development</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="instagram" href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="facebook" href=""><i class="fab fa-facebook"></i></a></li>
+                            <li><a class="linkedin" href=""><i class="fab fa-linkedin"></i></a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -347,7 +393,7 @@
                 $("#clientDiv").hide();
                 $("#contactDiv").hide();
             });
-            
+
             $("#homeBtn").click(function(){
                 $("#aboutLi").removeClass("active");
                 $("#clientLi").removeClass("active");
@@ -357,7 +403,7 @@
                 $("#clientDiv").hide();
                 $("#contactDiv").hide();
             });
-            
+
             $("#logoBtn").click(function(){
                 $("#aboutLi").removeClass("active");
                 $("#clientLi").removeClass("active");
@@ -367,7 +413,7 @@
                 $("#clientDiv").hide();
                 $("#contactDiv").hide();
             });
-            
+
             $("#clientBtn").click(function(){
                 $("#aboutLi").removeClass("active");
                 $("#homeLi").removeClass("active");
