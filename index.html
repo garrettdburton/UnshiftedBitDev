@@ -17,6 +17,10 @@
         <!-- Footer CSS -->
         <link href="css/footer.css" rel="stylesheet">
         <style>
+            body{
+                background-color: #282528;
+            }
+            
             .container-fluid {
                 width: 100%;
                 height: 100%;
@@ -40,11 +44,11 @@
                 border-radius: 20px; 
                 margin-top: 10px;
             }
-            
+
             .client-card{
                 border-radius: 20px;
             }
-            
+
             .client-img {
                 height: 250px;
             }
@@ -52,7 +56,6 @@
             .card-contact{
                 width: 300px;
             }
-
 
             .card .card-img-top{
                 border-radius: 20px;
@@ -95,15 +98,17 @@
                 bottom: 0;
             }
 
-            body{
-                padding-bottom:0px;
-            }
-
-            #header {
+            #clientDiv {
                 background-color: #FFA73C;
-                height: 35px;
             }
 
+            #aboutDiv {
+                background-color: #8A292E; 
+            }
+
+            #aboutDiv .card {
+                background-color: inherit;
+            }
 
         </style>
         <title>Unshifted Bit Development</title>
@@ -112,13 +117,12 @@
         <div class="container-fluid">
             <div class="row" id="header">
                 <div class="col-12 text-center">
-                    <a class="navbar-brand text-white text-small mx-auto" href="#" id="logoBtn">Unshifted Bit Development</a>
+                    <h3 class="navbar-brand text-white text-small mx-auto">Unshifted Bit Development</h3>
                 </div>
             </div>
         </div>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-white" id="mainNav">
             <div class="container">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -142,55 +146,102 @@
             </div>
         </nav>
 
-        <div class="jumbotron">
-            <div class="container text-center">
-                <h1>Unshifted Bit Development</h1>      
-                <p></p>
+
+        <div class="container-fluid text-center bg-light" style="height: 700px;">    
+            <div class="row">
+                <div class="col-md-12">
+
+
+                </div>
             </div>
         </div>
+        <div class="row bg-darkgray" style="height: 50px;">
+            
+        </div>
+        <div class="container-fluid text-center">    
+            <div class="row">
+                <div class="col-md-6 " id="aboutDiv">
+                    <div class="row h-100">
+                        <div class="col-md-12 my-auto">
+                            <div class="card">
+                                <div class="card-body text-white">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                             <h1>Let Us Build For You</h1>
+                                        </div>
+                                     
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>10+ Years of Software Development</p>
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </div>
+                                        <div class="col">
+                                            <p>Professional Solutions</p>
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>Mobile First Mentality</p>
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </div>
+                                        <div class="col">
+                                            <p>Results You Can Count On</p>
+                                            <br>
+                                            <br>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="container bg-3 text-center" id="clientDiv">    
-            <h3>Past Works</h3><br>
-            <div class="row" id="client">
-                <div class="col-sm-3 mx-auto"> 
-                    <a href="https://www.thebarber.business/" target="_blank">
-                        <div class="card client-card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
-                            <img class="card-img-top client-img" src="images/thebarber.jpeg" alt="thebarber">
-                            <div class="card-body">
-                                <h5 class="card-title">The Barber</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse faucibus interdum posuere. Fames ac turpis egestas sed tempus urna. Mi proin sed libero enim sed. Porttitor massa id neque aliquam vestibulum. Sagittis purus sit amet volutpat. Adipiscing commodo elit at imperdiet dui accumsan sit. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Aliquam sem et tortor consequat. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis..</p>
-                            </div>
-                        </div>
-                    </a>
                 </div>
-                <div class="col-sm-3 mx-auto"> 
-                    <a href="https://garrettdburton.github.io/davidEbbinghouse_website/" target="_blank">
-                        <div class="card client-card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
-                            <img class="card-img-top client-img" src="images/finejewerly.jpg" alt="finejewerly">
-                            <div class="card-body">
-                                <h5 class="card-title">David Ebbinghouse Fine Jewerly</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse faucibus interdum posuere. Fames ac turpis egestas sed tempus urna. Mi proin sed libero enim sed. Porttitor massa id neque aliquam vestibulum. Sagittis purus sit amet volutpat. Adipiscing commodo elit at imperdiet dui accumsan sit. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Aliquam sem et tortor consequat. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis..</p>
-                            </div>
+                <div class="col-md-6" id="clientDiv">
+                    <h1 class="text-bold text-white">Our Recent Partners</h1>
+                    <br>    
+                    <br>
+                    <div class="card-deck" id="client">
+                        <div class="col mx-auto"> 
+                            <a href="https://www.thebarber.business/" target="_blank">
+                                <div class="card client-card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem; height: 50rem;">
+                                    <img class="card-img-top client-img" src="images/thebarber.jpeg" alt="thebarber">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Barber</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse faucibus interdum posuere. Fames ac turpis egestas sed tempus urna. Mi proin sed libero enim sed. Porttitor massa id neque aliquam vestibulum. Sagittis purus sit amet volutpat. Adipiscing commodo elit at imperdiet dui accumsan sit. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Aliquam sem et tortor consequat. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis..</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-sm-3 mx-auto"> 
-                    <a href="https://www.thebarber.business/" target="_blank">
-                        <div class="card client-card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem;">
-                            <img class="card-img-top" src="https://placehold.it/150x80?text=IMAGE" alt="thebarber">
-                            <div class="card-body">
-                                <h5 class="card-title">Example 3</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse faucibus interdum posuere. Fames ac turpis egestas sed tempus urna. Mi proin sed libero enim sed. Porttitor massa id neque aliquam vestibulum. Sagittis purus sit amet volutpat. Adipiscing commodo elit at imperdiet dui accumsan sit. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Aliquam sem et tortor consequat. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis..</p>
-                            </div>
+                        <div class="col mx-auto"> 
+                            <a href="https://garrettdburton.github.io/davidEbbinghouse_website/" target="_blank">
+                                <div class="card client-card text-white bg-dark mb-3 mx-auto" style="max-width: 18rem; height: 50rem;">
+                                    <img class="card-img-top client-img" src="images/finejewerly.jpg" alt="finejewerly">
+                                    <div class="card-body">
+                                        <h5 class="card-title">David Ebbinghouse Fine Jewerly</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse faucibus interdum posuere. Fames ac turpis egestas sed tempus urna. Mi proin sed libero enim sed. Porttitor massa id neque aliquam vestibulum. Sagittis purus sit amet volutpat. Adipiscing commodo elit at imperdiet dui accumsan sit. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Aliquam sem et tortor consequat. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis..</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
-        </div><br>
-        <br><br>
-
+<div class="row bg-white" style="height: 50px;">
+            
+        </div>
+        </div>
+        
         <!-- Site footer -->
-        <nav class="site-footer p-3 bg-darkgray">
+        <nav class="site-footer p-3">
             <div class="container">
                 <div class="row" id="contactDiv">
                     <div class="col-md-4">
@@ -235,7 +286,7 @@
                 <hr>
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h6>UBD</h6>
+                        <h6>Unshifted Bit Development</h6>
                     </div>
                 </div>
                 <hr>
