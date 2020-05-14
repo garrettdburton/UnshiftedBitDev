@@ -79,22 +79,10 @@
                 font-size: 30px;
             }
             .bg-darkgray{
-                background-color:#26272b;
+                background-color:#282528;
             }
 
-            #homeDiv {
-                background-color:#26272b;
-            }
-
-            #aboutDiv{
-                background-color: black;
-            }
-
-            #clientDiv{
-
-            }
             #footerDiv{
-                background-color: black;
                 padding: 1em;
                 position: absolute;
                 left: 0;
@@ -105,12 +93,12 @@
             body{
                 padding-bottom:0px;
             }
-            
+
             #header {
-                background-color: #008ae6;
+                background-color: #FFA73C;
                 height: 35px;
             }
-            
+
 
         </style>
         <title>Unshifted Bit Development</title>
@@ -197,46 +185,46 @@
         <br><br>
 
         <!-- Site footer -->
-        <nav class="site-footer p-3">
+        <nav class="site-footer p-3 bg-darkgray">
             <div class="container">
-                    <div class="row justify-content-center p-3 bg-darkgray" id="contactDiv">
-                <div class="col-md-3 p-2 mx-auto">
-                    <div class="card card-contact mx-auto">
-                        <div class="card-body map-container">
-                            <i class="fas fa-map-marker text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Location</h4>
-                            <hr class="my-4">
-                            <!--Google map-->
-                            <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 200px">
-                                <iframe src="https://maps.google.com/maps?q=Bloomington&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                                        style="border:0" allowfullscreen></iframe>
+                <div class="row" id="contactDiv">
+                    <div class="col-md-4">
+                        <div class="card card-contact mx-auto">
+                            <div class="card-body map-container">
+                                <i class="fas fa-map-marker text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Location</h4>
+                                <hr class="my-4">
+                                <!--Google map-->
+                                <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 200px">
+                                    <iframe src="https://maps.google.com/maps?q=Bloomington&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                                            style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-4">
+                        <div class="card card-contact mx-auto">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4">
+                                <div class="small text-black-50">
+                                    <a href="#">garrettdburton@gmail.com</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div> 
-                <div class="col-md-3 p-2 mx-auto">
-                    <div class="card card-contact mx-auto">
-                        <div class="card-body text-center">
-                            <i class="fas fa-envelope text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Email</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">
-                                <a href="#">garrettdburton@gmail.com</a>
+                    <div class="col-md-4">
+                        <div class="card card-contact mx-auto">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4">
+                                <div class="small text-black-50">(123) 456-7892 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 p-2 mx-auto">
-                    <div class="card card-contact mx-auto">
-                        <div class="card-body text-center">
-                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Phone</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">(123) 456-7892 </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h6>UBD</h6>
@@ -263,7 +251,7 @@
             </div>
         </nav>
 
-<!-- Bootstrap core JavaScript -->
+        <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
