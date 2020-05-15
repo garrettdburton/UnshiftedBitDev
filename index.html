@@ -15,9 +15,6 @@
         <link rel="stylesheet" href="css/heading.css">
         <link rel="stylesheet" href="css/body.css">
         <style>
-            .masthead {
-                height: 500px !important;
-            }
             .navbar-nav > li > .nav-link:hover {
                 background-color: #FFA73C !important;
                 color: white !important;
@@ -29,6 +26,10 @@
 
             .bg-secondary{
                 background-color:#3C94FF !important;
+            }
+            
+            .no-border{
+                 border-style: none;
             }
 
             .bg-thirdary{
@@ -81,8 +82,9 @@
                     <div class="divider-custom-line"></div>
 
                 </div>
+                <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" /><!-- Masthead Heading-->
                 <!-- Masthead Subheading-->
-                <p class="pre-wrap masthead-subheading font-weight-light mb-0">Web Development</p>
+                <p class="pre-wrap masthead-subheading font-weight-light mb-0">- Web Development -</p>
             </div>
         </header>
         <section class="page-section portfolio" id="portfolio">
@@ -140,12 +142,12 @@
                                     <p class="mb-5">The Barber at BMG (Monroe County Airport) is a full service barbershop that offers a relaxing atmosphere with consistent haircuts and the best view from a barber chair there is to offer!</p>
                                     <div class="row mb-1">
                                         <div class="col-md-12">
-                                            <button class="btn bg-secondary btn-primary" href="https://www.thebarber.business" target="_blank">View Site</button>
+                                            <button class="btn no-border bg-secondary btn-primary" href="https://www.thebarber.business" target="_blank">View Site</button>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <button class="btn bg-secondary btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                            <button class="btn no-border bg-secondary btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                         </div>
                                     </div>
 
@@ -175,12 +177,12 @@
                                     <p class="mb-5">David makes one-of-a-kind necklaces using ancient beads from many different cultures around the world. His self-taught goldsmith, Michael Winsten, uses ancient techniques of granulation and filigree to custom-made beads and clasps that compliment each unique design</p>
                                     <div class="row mb-1">
                                         <div class="col-md-12">
-                                            <button class="btn bg-secondary btn-primary" href="#">View Site <br> (coming soon)</button>
+                                            <button class="btn no-border bg-secondary btn-primary" href="#">View Site <br> (coming soon)</button>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <button class="btn bg-secondary btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                            <button class="btn no-border bg-secondary btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                         </div>
                                     </div>
                                 </div>
@@ -244,6 +246,36 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Form -->
+                <div class="container contact-form">
+                    <div class="contact-image">
+                        <img src="/assets/img/rocket_contact.png" alt="rocket_contact"/>
+                    </div>
+                    <form method="post">
+                        <h3>Drop Us a Message</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="button" name="btnSubmit" class="btn no-border bg-secondary btn-primary" value="Send Message" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <!-- Contact Section Content-->
                 <div class="row justify-content-center">
