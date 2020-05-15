@@ -14,21 +14,24 @@
         <link rel="stylesheet" href="css/heading.css">
         <link rel="stylesheet" href="css/body.css">
         <style>
-            #mainNav {
-                background-color: #282528;
-            }
+            
             .navbar-nav > li > .nav-link:hover {
                 background-color: #FFA73C !important;
                 color: white !important;
             }
             
             .bg-primary{
-                background-color:#FFA73C;
+                background-color:#FFA73C !important;
+            }
+            
+            .bg-secondary{
+                background-color:#3C94FF !important;
+            }
+            
+            .bg-thirdary{
+                background-color: #282528;
             }
 
-            .masthead {
-                background-color: #FFA73C;
-            }
 
             #about {
                 background-color: #282528;
@@ -37,19 +40,13 @@
             .icon-contact{
                 background-color:#FFA73C;
             }
-            .footer {
-                background-color: #3C94FF;
-            }
-            .copyright {
-                background-color: #282528;
-            }
         </style>
 
     </head>
     <body id="page-top">
-        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg fixed-top bg-thirdary" id="mainNav">
             <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">UBD</a>
-                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-secondary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> Menu <i class="fas fa-bars"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">PORTFOLIO</a>
@@ -62,7 +59,7 @@
                 </div>
             </div>
         </nav>
-        <header class="masthead text-white text-center">
+        <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading mb-0">Unshifted Bit Development</h1>
@@ -212,7 +209,7 @@
                 </div>
             </div>
         </section>
-        <footer class="footer text-center">
+        <footer class="footer bg-secondary text-center">
             <div class="container">
                 <div class="row justify-content-center">
                     <!-- Footer Location
@@ -235,7 +232,7 @@
             </div>
         </footer>
         <!-- Copyright Section-->
-        <section class="copyright py-4 text-center text-white">
+        <section class="copyright bg-thirdary py-4 text-center text-white">
             <div class="container"><small class="pre-wrap">Copyright © Unshifted Bit Development 2020</small></div>
         </section>
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
