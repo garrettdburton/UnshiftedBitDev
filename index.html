@@ -19,7 +19,7 @@
                 width: auto!important; 
                 overflow-x: hidden!important
             } 
-            
+
             .navbar-nav > li > .nav-link:hover {
                 background-color: #FFA73C !important;
                 color: white !important;
@@ -41,11 +41,6 @@
                 background-color: #282528;
             }
 
-
-            #about {
-                background-color: #282528;
-            }
-
             .icon-contact{
                 background-color:#FFA73C;
             }
@@ -58,6 +53,13 @@
                 color: inherit; /* Inherit text color of parent element. */
                 text-decoration: none; /* Remove underline. */
                 /* Additional css `propery: value;` pairs here */
+            }
+
+            .avatar {
+                vertical-align: middle;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
             }
         </style>
 
@@ -90,6 +92,7 @@
                 <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" /><!-- Masthead Heading-->
                 <!-- Masthead Subheading-->
                 <p class="pre-wrap masthead-subheading font-weight-light mb-0">- Web Development -</p>
+
             </div>
         </header>
         <section class="page-section portfolio" id="portfolio">
@@ -149,7 +152,7 @@
                                     <p class="mb-5">The Barber at BMG (Monroe County Airport) is a full service barbershop that offers a relaxing atmosphere with consistent haircuts and the best view from a barber chair there is to offer!</p>
                                     <div class="row mb-1">
                                         <div class="col-md-12">
-                                           <a href="https://www.thebarber.business" target="_blank"><button class="btn no-border bg-secondary btn-primary" >View Site</button></a>
+                                            <a href="https://www.thebarber.business" target="_blank"><button class="btn no-border bg-secondary btn-primary" >View Site</button></a>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -199,11 +202,11 @@
                 </div>
             </div>
         </div>
-        <section class="page-section text-white mb-0" id="about">
+        <section class="page-section text-white mb-0 bg-thirdary" id="promise">
             <div class="container p-3">
-                <!-- About Section Heading-->
+                <!-- Promise Heading-->
                 <div class="text-center">
-                    <h2 class="page-section-heading d-inline-block text-white">ABOUT</h2>
+                    <h2 class="page-section-heading d-inline-block text-white">Our Promise</h2>
                 </div>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
@@ -211,14 +214,14 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row justify-content-center">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 p-3">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="bg-secondary icon-contact mb-3"><i class="fas fa-running"></i></div>
                             <h4 class="">Fast</h4>
                             <div class="lead text-center">We promise fast loading websites & development</div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 p-3">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="bg-secondary icon-contact mb-3"><i class="fas fa-window-maximize"></i></div>
                             <h4 class="">Responsive</h4>
@@ -227,14 +230,14 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 p-3">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="bg-secondary icon-contact mb-3"><i class="fas fa-terminal"></i></div>
                             <h4 class="">Dynamic</h4>
                             <div class="lead text-center">Bring your site to life allow us to animate</div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 p-3">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="bg-secondary icon-contact mb-3"><i class="fas fa-smile"></i></div>
                             <h4 class="">Satisfacation</h4>
@@ -242,8 +245,38 @@
                         </div>
                     </div>
                 </div>
+
+
+
             </div>
+
         </section>
+
+        <section class="page-section text-white mb-0 bg-secondary" id="about">
+            <div class="container p-3">
+                <!-- About Section Heading-->
+                <div class="text-center">
+                    <h2 class="page-section-heading d-inline-block text-white">About Us</h2>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-lg-4 p-3 h-100">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="bg-secondary"><img src="assets/img/avatar2.jpeg" alt="Avatar" class="img-fluid"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 p-3 h-100">
+                        <div class="d-flex flex-column align-items-center mb-3">
+                            <div class="lead text-left p-3">In early 2007 I found my love for software development. The next 13 years have lead to a BS in Computer Science from Indiana University along with numerous projects in the public and private sector. I started Unshifted Bit Development to share this love and passion for simple yet effective software solutions. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section> 
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
@@ -323,7 +356,7 @@
                 </div>
             </div>
         </section>
-        <footer class="footer bg-secondary text-center">
+        <footer class="footer bg-primary text-center">
             <div class="container">
                 <div class="row justify-content-center">
                     <!-- Footer Location
