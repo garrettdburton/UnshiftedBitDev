@@ -22,6 +22,9 @@
                 overflow-x: hidden!important
             } 
 
+            .navbar-brand:hover{
+                color: #FFA73C !important;
+            }
             .navbar-nav > li > .nav-link:hover {
                 background-color: #FFA73C !important;
                 color: white !important;
@@ -64,6 +67,43 @@
                 border-radius: 50%;
             }
 
+            #getStartedBtn {
+                display: inline-block;
+                border-radius: 4px;
+                text-align: center;
+                transition: all 0.5s;
+                cursor: pointer;
+            }
+            
+            #getStartedBtn:hover{
+                background-color: #3C94FF;
+            }
+
+            #getStartedBtn span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            #getStartedBtn span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+
+            #getStartedBtn:hover span {
+                padding-right: 25px;
+            }
+
+            #getStartedBtn:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+
         </style>
 
     </head>
@@ -96,7 +136,7 @@
                 <!-- Masthead Avatar Image--><img data-aos="fade-up" class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" /><!-- Masthead Heading-->
                 <!-- Masthead Subheading-->
                 <p class="pre-wrap masthead-subheading font-weight-light mb-0">- Let Us Create For You -</p>
-                <a href="#contact" class="m-3"><button type="button" class="btn btn-primary">Get Started</button></a>
+                <a href="#contact" class="m-3"><button type="button" class="btn btn-lg btn-primary" id="getStartedBtn"><span>Get Started</span></button></a>
 
             </div>
         </header>
