@@ -74,7 +74,7 @@
                 transition: all 0.5s;
                 cursor: pointer;
             }
-            
+
             #getStartedBtn:hover{
                 background-color: #3C94FF;
             }
@@ -104,6 +104,11 @@
                 right: 0;
             }
 
+            .btn-qoute:hover, .btn-qoute:active{
+                background-color: #282528 !important;
+                border-color: white;
+            }
+
         </style>
 
     </head>
@@ -113,11 +118,13 @@
                 <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-secondary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> Menu <i class="fas fa-bars"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#portfolio">PORTFOLIO</a>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
                         </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#about">ABOUT</a>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
                         </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#contact">CONTACT</a>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -131,12 +138,11 @@
                 <!-- Icon Divider-->
                 <div data-aos="fade-up" class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-
                 </div>
                 <!-- Masthead Avatar Image--><img data-aos="fade-up" class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" /><!-- Masthead Heading-->
                 <!-- Masthead Subheading-->
-                <p class="pre-wrap masthead-subheading font-weight-light mb-0">- Let Us Create For You -</p>
-                <a href="#contact" class="m-3"><button type="button" class="btn btn-lg btn-primary" id="getStartedBtn"><span>Get Started</span></button></a>
+                <p class="pre-wrap masthead-subheading font-weight-light mb-5">We specialize in custom web development. If you're a business seeking a web presence or an inspiring blogger we can help.</p>
+                <a href="#services" class="m-3"><button type="button" class="btn btn-lg btn-primary" id="getStartedBtn"><span>Get Started</span></button></a>
 
             </div>
         </header>
@@ -278,36 +284,101 @@
                         </div>
                     </div>
                 </div>
-                <!-- About Section Content-->
-                <!-- About Us Heading-->
-                <div class="text-center" data-aos="fade-up">
-                    <h3 class="3 d-inline-block text-white">We Promise</h3>
+
+            </div>
+        </section>
+
+        <section class="page-section text-white mb-0 bg-secondary" id="services">
+            <div class="container p-3">
+                <!-- Services Heading-->
+                <div class="text-center" data-aos="fade-up" >
+                    <h2 class="page-section-heading d-inline-block text-white">Services</h2>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light" data-aos="fade-up" >
+                    <div class="divider-custom-line"></div>
                 </div>
                 <div class="row justify-content-center">
-                    <div  class="col-lg-4 p-3">
+                    <div class="col-md-4 m-2">
+                        <div class="card mx-auto p-1">
+                            <div class="card-body bg-thirdary">
+                                <h5 class="card-title text-white text-center">Basic Plan</h5>
+                            </div>
+                            <ul class="list-group list-group-flush text-center">
+                                <li class="list-group-item text-dark">Website Audit (if applicable)</li>
+                                <li class="list-group-item text-dark">Design</li>
+                                <li class="list-group-item text-dark">Development</li>
+                            </ul>
+                            <div class="card-body text-center">
+                                <button type="button" class="btn btn-md btn-primary bg-thirdary btn-qoute"><a href="#contact" class="card-link text-light">Request Qoute</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 m-2">
+                        <div class="card mx-auto p-1">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-white text-center">Standard Plan</h5>
+                            </div>
+                            <ul class="list-group list-group-flush text-center">
+                                <li class="list-group-item text-dark">Website Audit (if applicable)</li>
+                                <li class="list-group-item text-dark">Design</li>
+                                <li class="list-group-item text-dark">Development</li>
+                                <li class="list-group-item text-dark">Backups</li>
+                                <li class="list-group-item text-dark">Live Chat</li>
+                                <li class="list-group-item text-dark">Search Engine Optimization</li>
+                                <li class="list-group-item text-dark">Content Management</li>
+                            </ul>
+                            <div class="card-body text-center">
+                                <button type="button" class="btn btn-md btn-primary btn-qoute"><a href="#contact" class="card-link text-light">Request Qoute</a></button>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="col-md-4 m-2">
+                        <div class="card mx-auto p-1">
+                            <div class="card-body bg-primary">
+                                <h5 class="card-title text-white text-center">Premium Plan</h5>
+                            </div>
+                            <ul class="list-group list-group-flush text-center">
+                                <li class="list-group-item text-dark">Website Audit (if applicable)</li>
+                                <li class="list-group-item text-dark">Design</li>
+                                <li class="list-group-item text-dark">Development</li>
+                                <li class="list-group-item text-dark">Backups</li>
+                                <li class="list-group-item text-dark">Live Chat</li>
+                                <li class="list-group-item text-dark">Search Engine Optimization</li>
+                                <li class="list-group-item text-dark">Content Management</li>
+                                <li class="list-group-item text-dark">Maintenance Agreement</li>
+                                <li class="list-group-item text-dark">Hosting</li>
+                                <li class="list-group-item text-dark">Email Setup</li>
+                            </ul>
+                            <div class="card-body text-center">
+                                <button type="button" class="btn btn-md btn-primary bg-primary btn-qoute"><a href="#contact" class="card-link text-light">Request Qoute</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 p-3">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="bg-secondary icon-contact mb-3" data-aos="fade-up"><i class="fas fa-running"></i></div>
                             <h4 data-aos="fade-up">Fast</h4>
                             <div class="lead text-center" data-aos="fade-up">Fast loading websites & development</div>
                         </div>
                     </div>
-                    <div class="col-lg-4 p-3">
+                    <div class="col-lg-3 p-3">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="bg-secondary icon-contact mb-3" data-aos="fade-up"><i class="fas fa-window-maximize"></i></div>
                             <h4 data-aos="fade-up">Responsive</h4>
                             <div class="lead text-center" data-aos="fade-up">From a phone screen to a monitor your site will shine</div>
                         </div>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 p-3">
+                    <div class="col-lg-3 p-3">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="bg-secondary icon-contact mb-3" data-aos="fade-up"><i class="fas fa-terminal"></i></div>
                             <h4 data-aos="fade-up">Dynamic</h4>
                             <div class="lead text-center" data-aos="fade-up">Bring your site to life allow us to animate</div>
                         </div>
                     </div>
-                    <div class="col-lg-4 p-3">
+                    <div class="col-lg-3 p-3">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="bg-secondary icon-contact mb-3" data-aos="fade-up"><i class="fas fa-smile"></i></div>
                             <h4 data-aos="fade-up">Satisfacation</h4>
@@ -315,11 +386,7 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
-
         </section>
 
         <section class="page-section" id="contact">
@@ -367,38 +434,40 @@
                         </div>
                     </form>
                 </div>
+
+            </div>
+        </section>
+        <footer class="footer bg-secondary text-center">
+            <div class="container">
+                <div class="row justify-content-center p-3">
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="mb-4" data-aos="fade-up">Unshifted Bit Development</h4>
+                        <p class="pre-wrap lead mb-0" data-aos="fade-up">We Make Web Development Simple</p>
+                    </div>
+
+                </div>
                 <!-- Contact Section Content-->
                 <div class="row justify-content-center p-3">
                     <div class="col-lg-4">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="icon-contact mb-3" data-aos="fade-up"><i class="fas fa-mobile-alt"></i></div>
-                            <div class="text-muted" data-aos="fade-up">Phone</div>
-                            <div class="lead font-weight-bold text-dark" data-aos="fade-up"><a href="tel:+1-812-361-9922" data-aos="fade-up">1-812-361-9922</a></div>
+                            <div class="" data-aos="fade-up">Phone</div>
+                            <div class="lead font-weight-bold" data-aos="fade-up"><a href="tel:+1-812-361-9922" data-aos="fade-up">1-812-361-9922</a></div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="icon-contact mb-3" data-aos="fade-up"><i class="fas fa-map-marker-alt"></i></div>
-                            <div class="text-muted" data-aos="fade-up">Location</div>
+                            <div class="" data-aos="fade-up">Location</div>
                             <div class="lead font-weight-bold" data-aos="fade-up">Bloomington, IN 47401</div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="icon-contact mb-3" data-aos="fade-up"><i class="far fa-envelope"></i></div>
-                            <div class="text-muted" data-aos="fade-up">Email</div><a class="lead font-weight-bold text-dark" href="mailto:contact@unshiftedbitdev.com" data-aos="fade-up">contact@unshiftedbitdev.com</a>
+                            <div class="" data-aos="fade-up">Email</div><a class="lead font-weight-bold text-light" href="mailto:contact@unshiftedbitdev.com" data-aos="fade-up">contact@unshiftedbitdev.com</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer bg-secondary text-center">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="mb-4" data-aos="fade-up">Unshifted Bit Development</h4>
-                        <p class="pre-wrap lead mb-0" data-aos="fade-up">We Make Web Development Simple</p>
                     </div>
                 </div>
             </div>
