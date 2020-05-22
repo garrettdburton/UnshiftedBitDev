@@ -104,9 +104,19 @@
                 right: 0;
             }
 
-            .btn-qoute:hover, .btn-qoute:active{
-                background-color: #282528 !important;
-                border-color: white;
+            #basicBtn, #basicBtn:hover {
+                border-color: black !important;
+                background-color: black !important;
+            }
+
+            #standardBtn, #standardBtn:hover {
+                border-color: #3C94FF !important;
+                background-color: #3C94FF !important;
+            }
+
+            #premiumBtn, #premiumBtn:hover {
+                border-color: #FFA73C !important;
+                background-color: #FFA73C !important;
             }
 
         </style>
@@ -299,7 +309,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-4 mb-3 mt-3">
                         <div class="card mx-auto p-1" data-aos="fade-up">
                             <div class="card-body bg-thirdary">
                                 <h5 class="card-title text-white text-center">Basic Plan</h5>
@@ -310,11 +320,11 @@
                                 <li class="list-group-item text-dark">Development</li>
                             </ul>
                             <div class="card-body text-center">
-                                <button type="button" class="btn btn-md btn-primary bg-thirdary btn-qoute"><a href="#contact" class="card-link text-light">Request Quote</a></button>
+                                <button type="button" class="btn btn-md btn-primary bg-thirdary btn-qoute" id="basicBtn"><a href="#contact" class="card-link text-light">Request Quote</a></button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-4 mb-3 mt-3">
                         <div class="card mx-auto p-1" data-aos="fade-up">
                             <div class="card-body bg-secondary">
                                 <h5 class="card-title text-white text-center">Standard Plan</h5>
@@ -329,11 +339,11 @@
                                 <li class="list-group-item text-dark">Content Management</li>
                             </ul>
                             <div class="card-body text-center">
-                                <button type="button" class="btn btn-md btn-primary btn-qoute"><a href="#contact" class="card-link text-light">Request Quote</a></button>
+                                <button type="button" class="btn btn-md btn-primary btn-qoute" id="standardBtn"><a href="#contact" class="card-link text-light">Request Quote</a></button>
                             </div>
                         </div>
                     </div>   
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-4 mb-3 mt-3">
                         <div class="card mx-auto p-1" data-aos="fade-up">
                             <div class="card-body bg-primary">
                                 <h5 class="card-title text-white text-center">Premium Plan</h5>
@@ -351,12 +361,12 @@
                                 <li class="list-group-item text-dark">Email Setup</li>
                             </ul>
                             <div class="card-body text-center">
-                                <button type="button" class="btn btn-md btn-primary bg-primary btn-qoute"><a href="#contact" class="card-link text-light">Request Quote</a></button>
+                                <button type="button" class="btn btn-md btn-qoute btn-primary" id="premiumBtn"><a href="#contact" class="card-link text-light">Request Quote</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center mt-3">
                     <div class="col-lg-3 p-3">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="bg-secondary icon-contact mb-3" data-aos="fade-up"><i class="fas fa-running"></i></div>
@@ -413,11 +423,11 @@
                             <div class="col-md-6">
                                 <input type="hidden" name="_subject" value="New UBD Message!" />
                                 <div class="form-group">
-                                     <label>Name:</label>
+                                    <label>Name:</label>
                                     <input type="text" name="Name" class="form-control" value="" required>
                                 </div>
                                 <div class="form-group">
-                                     <label>Email:</label>
+                                    <label>Email:</label>
                                     <input type="text" name="_replyto" class="form-control" value="" required>
                                 </div>
                                 <div class="form-group">
@@ -435,7 +445,7 @@
                                     <textarea name="Message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
                                 </div>
                                 <div class="form-group text-right">
-                                    <button type="submit" class="btn no-border bg-secondary btn-primary ml-auto"> Send Message</button>
+                                    <button type="submit" class="btn no-border bg-secondary btn-primary ml-auto">Send Message</button>
                                 </div>
                             </div>
                         </div>
