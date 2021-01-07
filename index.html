@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="css/heading.css">
         <link rel="stylesheet" href="css/body.css">
         <link rel="stylesheet" href="css/aos.css" />
+        <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
         <style>
             html, body {
                 width: auto!important; 
@@ -120,6 +122,67 @@
                 background-color: #FFA73C !important;
             }
 
+            .block-testimony-1 {
+                padding: 20px; 
+            }
+            
+            .block-testimony-1 blockquote {
+                background: #fff;
+                padding: 30px;
+                font-weight: 400;
+                font-size: 18px;
+                border-radius: 7px;
+                color: #000;
+                position: relative;
+                -webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.4);
+                box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.4); 
+            }
+            
+            .block-testimony-1 blockquote:before {
+                top: 100%;
+                left: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none; 
+            }
+            
+            .block-testimony-1 blockquote:before {
+                border-color: rgba(255, 255, 255, 0);
+                border-top-color: #fff;
+                border-width: 15px;
+                margin-left: -15px; 
+            }
+            
+            .block-testimony-1 figure {
+                position: relative;
+                padding-top: 20px; 
+            }
+            
+            .block-testimony-1 figure:before {
+                position: absolute;
+                content: "";
+                width: 50px;
+                left: 50%;
+                display: none;
+                top: 0;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                background: #9c2c2c;
+                height: 2px; 
+            }
+            
+            .block-testimony-1 figure img {
+                max-width: 70px; 
+            }
+            
+            .block-testimony-1 h3 {
+                font-size: 18px; 
+            }
+
         </style>
 
     </head>
@@ -135,13 +198,14 @@
                         </li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#services">Services</a>
                         </li>
+                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#reviews">Reviews</a>
+                        </li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Heading-->
@@ -163,6 +227,7 @@
             </div>
         </header>
 
+        <!-- Portfolo Section -->
         <section data-aos="fade-up" class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
@@ -205,7 +270,7 @@
                         </div>
                         <h5 class="text-center p-2" data-aos="fade-up">Hoosier Doggie Daycare</h5>
                     </div>
-                     <div data-aos="fade-up" class="col-md-3 col-lg-3 mb-5">
+                    <div data-aos="fade-up" class="col-md-3 col-lg-3 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3" data-aos="fade-left">
                             <div class="portfolio-item-caption bg-secondary d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="far fa-eye fa-3x"></i></div>
@@ -242,7 +307,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12 p-2">
-                                            <button class="btn no-border bg-secondary btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                            <a href="http://www.ancientbeadnecklaces.com" target="_blank"> <button class="btn no-border bg-secondary btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button></a>
                                         </div>
                                     </div>
 
@@ -272,7 +337,7 @@
                                     <p class="mb-5">David makes one-of-a-kind necklaces using ancient beads from many different cultures around the world. His self-taught goldsmith, Michael Winsten, uses ancient techniques of granulation and filigree to custom-made beads and clasps that compliment each unique design</p>
                                     <div class="row mb-1">
                                         <div class="col-md-12">
-                                            <button class="btn no-border bg-secondary btn-primary" href="#">View Site <br> (coming soon)</button>
+                                            <button class="btn no-border bg-secondary btn-primary" href="#">View Site </button>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -306,7 +371,7 @@
                                     <p class="mb-5">We are a cage-free 24 hour dog care facility. No cages, crates or kennels. We offer daycare and boarding services in a home-like atmosphere.</p>
                                     <div class="row mb-1">
                                         <div class="col-md-12">
-                                           <a href="https://www.hoosierdoggiedaycare.com" target="_blank"><button class="btn no-border bg-secondary btn-primary" href="#">View Site</button></a>
+                                            <a href="https://www.hoosierdoggiedaycare.com" target="_blank"><button class="btn no-border bg-secondary btn-primary" href="#">View Site</button></a>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -321,7 +386,7 @@
                 </div>
             </div>
         </div>
-         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal3Label" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal3Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
@@ -338,9 +403,9 @@
                                     <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-2" src="assets/img/portfolio/hoosiercanine.jpg" loading="lazy" alt="hoosiercanine"/>
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">Training, Boarding, and Daycare for dogs of all ages and sizes! Changing one human dog relationship at a time! Its a partnership, not a ownership!</p>
-                                     <div class="row mb-1">
+                                    <div class="row mb-1">
                                         <div class="col-md-12">
-                                           <a href="http://www.hoosiercanine.com" target="_blank"><button class="btn no-border bg-secondary btn-primary" href="#">View Site</button></a>
+                                            <a href="http://www.hoosiercanine.com" target="_blank"><button class="btn no-border bg-secondary btn-primary" href="#">View Site</button></a>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -355,38 +420,39 @@
                 </div>
             </div>
         </div>
-        <section class="page-section text-white mb-0 bg-thirdary" id="about">
-            <div class="container p-3">
-                <!-- About Us Heading-->
+        
+         <!-- Review Section -->
+        <section class="page-section bg-thirdary" id="reviews">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Contact Section Heading-->
                 <div class="text-center" data-aos="fade-up" >
-                    <h2 class="page-section-heading d-inline-block text-white">About Me</h2>
+                    <h2 class="page-section-heading d-inline-block mb-0 text-white">Reviews</h2>
                 </div>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light" data-aos="fade-up" >
                     <div class="divider-custom-line"></div>
                 </div>
+                <!-- Carousel -->
+                <div  data-aos="fade-up" data-aos-delay="200">
+                    <div class="owl-carousel nonloop-block-13">
+                        <div>
+                            <div class="block-testimony-1 text-center">
+                                <blockquote class="mb-4">
+                                    <p>Working with Garrett to build a website for a small local barbershop, that I had just opened, was one of the best decisions I made! He is easy to communicate with, knowledgeable, and the outcome was beyond my expectations. A website is the first place people go to check out your business, it attracts customers and Garrett knows how to tailor that to your individual business! My clients love the look, feel and simplicity of the website Garrett built for me! </p>
+                                </blockquote>
 
-                <div class="row justify-content-center p-3 mb-4">
-                    <div class="col-md-6 col-lg-4 p-3 h-100" data-aos="fade-up" >
-                        <img class="img-fluid rounded" src="/assets/img/profile.jpeg">
-                    </div>
-                    <div class="col-md-6 col-lg-8 p-3 h-100" data-aos="fade-up" >
-                        <div class="d-flex flex-column align-items-center mb-3">
-                            <div class="lead text-left p-1">In early 2007 I found my love for software development. The next 13 years have lead to a BS in Computer Science from Indiana University along with numerous projects in both the public and private sector. I started Unshifted Bit Development to share this love and passion for simple yet effective software solutions. </div>
-
-                        </div>
-                        <div class="text-right pt-1" data-aos="fade-up">
-                            <h5 class="d-inline-block text-white">Garrett Burton</h5>
-                        </div>
-                        <div class="text-right" data-aos="fade-up">
-                            <p class="d-inline-block text-white">(owner)</p>
+                                <figure>
+                                    <img src="assets/img/portfolio/thebarber.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
+                                </figure>
+                                <h3 class="font-size-20 mb-4 text-black">The Barber</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-
+        
+        <!-- Service Section -->
         <section class="page-section text-white mb-0 bg-secondary" id="services">
             <div class="container p-3">
                 <!-- Services Heading-->
@@ -489,13 +555,56 @@
             </div>
         </section>
 
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
+       
+        
+        
+         <section class="page-section mb-0" id="about">
+            <div class="container p-3">
+                <!-- About Us Heading-->
                 <div class="text-center" data-aos="fade-up" >
-                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">CONTACT</h2>
+                    <h2 class="page-section-heading d-inline-block">About Me</h2>
                 </div>
                 <!-- Icon Divider-->
+                <div class="divider-custom" data-aos="fade-up" >
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <div class="row justify-content-center p-3 mb-4">
+                    <div class="col-md-6 col-lg-4 p-3 h-100" data-aos="fade-up" >
+                        <img class="img-fluid rounded" src="/assets/img/profile.jpeg">
+                    </div>
+                    <div class="col-md-6 col-lg-8 p-3 h-100" data-aos="fade-up" >
+                        <div class="d-flex flex-column align-items-center mb-3">
+                            <div class="lead text-left p-1">In early 2007 I found my love for software development. The next 13 years have lead to a BS in Computer Science from Indiana University along with numerous projects in both the public and private sector. I started Unshifted Bit Development to share this love and passion for simple yet effective software solutions. </div>
+
+                        </div>
+                        <div class="text-right pt-1" data-aos="fade-up">
+                            <h5 class="d-inline-block text-white">Garrett Burton</h5>
+                        </div>
+                        <div class="text-right" data-aos="fade-up">
+                            <p class="d-inline-block text-white">(owner)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
+
+        <!-- Contact Section -->
+        <section class="page-section bg-thirdary" id="contact">
+            <div class="container bg-white p-5 rounded">
+                <!-- Contact Section Heading-->
+                  <!-- About Us Heading-->
+                <div class="text-center" data-aos="fade-up" >
+                    <h2 class="page-section-heading d-inline-block">Contact</h2>
+                </div>
+                <!-- Icon Divider-->
+                 <!-- Icon Divider-->
                 <div class="divider-custom" data-aos="fade-up" >
                     <div class="divider-custom-line"></div>
                 </div>
@@ -542,6 +651,8 @@
 
             </div>
         </section>
+
+        <!-- Footer -->
         <footer class="footer bg-secondary text-center">
             <div class="container">
                 <div class="row justify-content-center p-3">
@@ -597,6 +708,7 @@
         <script src="js/scripts.js"></script>
         <!-- Scroll animations -->
         <script src="js/aos.js"></script>
+        <script src="owlcarousel/dist/owl.carousel.min.js"></script>
         <script>
             AOS.init();
 
@@ -624,8 +736,12 @@
                 anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
             });
-            
-            consoleo.log("Hi There");
+
+            $(document).ready(function(){
+                $('.owl-carousel').owlCarousel({
+
+                })
+            });
         </script>
     </body>
 </html>
