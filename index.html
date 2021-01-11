@@ -182,6 +182,10 @@
                 font-size: 18px; 
             }
 
+            #fbHeader{
+                height: 25px;
+            }
+
         </style>
 
     </head>
@@ -191,15 +195,17 @@
                 <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-secondary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> Menu <i class="fas fa-bars"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Clients</a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#services">Services</a>
                         </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#reviews">Reviews</a>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#about">Our Story</a>
                         </li>
+
+
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item ml-5 ml-lg-5"><a class="nav-link py-3 px-2 px-lg-3 rounded js-scroll-trigger" target="_blank" href="https://www.facebook.com/Unshifted-Bit-Development-107142578001367/"><img id="fbHeader" src="assets/img/facebook_icon.jpg"></a>
                         </li>
                     </ul>
                 </div>
@@ -227,7 +233,7 @@
         </header>
 
         <!-- Portfolo Section -->
-        <section data-aos="fade-up" class="page-section portfolio" id="portfolio">
+        <section class="page-section portfolio pb-0" id="portfolio" data-aos="fade-up" >
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <div class="text-center" data-aos="fade-up">
@@ -276,6 +282,40 @@
                             </div><img class="img-fluid" src="assets/img/portfolio/hoosiercanine.jpg" alt="hoosiercanine"/>
                         </div>
                         <h5 class="text-center p-2" data-aos="fade-up">Hoosier Canine</h5>
+                    </div>
+                </div>
+                <div class="row pb-4">
+                    <div class="col-12">
+                        <div class="text-left" data-aos="fade-up" >
+                            <h5 class="d-inline-block mb-0 text-thirdary">What our clients have said...</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-thirdary rounded" data-aos="fade-up">
+
+                    <div class="col-md-6 col-sm-12 mx-auto">
+                        <div class="block-testimony-1 text-center">
+                            <blockquote class="mb-4">
+                                <p>Working with Garrett to build a website for a small local barbershop, that I had just opened, was one of the best decisions I made! He is easy to communicate with, knowledgeable, and the outcome was beyond my expectations. A website is the first place people go to check out your business, it attracts customers and Garrett knows how to tailor that to your individual business! My clients love the look, feel and simplicity of the website Garrett built for me! </p>
+                            </blockquote>
+
+                            <figure>
+                                <img src="assets/img/portfolio/thebarber.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
+                            </figure>
+                            <h3 class="font-size-20 mb-4 text-white">The Barber</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 mx-auto">
+                        <div class="block-testimony-1 text-center">
+                            <blockquote class="mb-4">
+                                <p>Very satisfied with the results! This is a creative company that is willing to work with you every step of the way as you develop your ideas and how you want your website to look. Communication was straightforward and unambiguous. Unshifted Bit Development provides an amazing value and I will definitely be using their services in the future. </p>
+                            </blockquote>
+
+                            <figure>
+                                <img src="assets/img/portfolio/finejewerly.jpeg" alt="Image" class="img-fluid rounded-circle mx-auto">
+                            </figure>
+                            <h3 class="font-size-20 mb-4 text-white">David Ebbinghouse</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -421,44 +461,8 @@
         </div>
 
         <!-- Review Section -->
-        <section class="page-section bg-thirdary" id="reviews">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Contact Section Heading-->
-                <div class="text-center" data-aos="fade-up" >
-                    <h2 class="page-section-heading d-inline-block mb-0 text-white">Reviews</h2>
-                </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light" data-aos="fade-up" >
-                    <div class="divider-custom-line"></div>
-                </div>
-                <div class="row" data-aos="fade-up">
-                        <div class="col-md-6 col-sm-12 mx-auto">
-                            <div class="block-testimony-1 text-center">
-                                <blockquote class="mb-4">
-                                    <p>Working with Garrett to build a website for a small local barbershop, that I had just opened, was one of the best decisions I made! He is easy to communicate with, knowledgeable, and the outcome was beyond my expectations. A website is the first place people go to check out your business, it attracts customers and Garrett knows how to tailor that to your individual business! My clients love the look, feel and simplicity of the website Garrett built for me! </p>
-                                </blockquote>
+        <section class="page-section " id="reviews">
 
-                                <figure>
-                                    <img src="assets/img/portfolio/thebarber.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
-                                </figure>
-                                <h3 class="font-size-20 mb-4 text-white">The Barber</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 mx-auto">
-                            <div class="block-testimony-1 text-center">
-                                <blockquote class="mb-4">
-                                    <p>Very satisfied with the results! This is a creative company that is willing to work with you every step of the way as you develop your ideas and how you want your website to look. Communication was straightforward and unambiguous. Unshifted Bit Development provides an amazing value and I will definitely be using their services in the future. </p>
-                                </blockquote>
-
-                                <figure>
-                                    <img src="assets/img/portfolio/finejewerly.jpeg" alt="Image" class="img-fluid rounded-circle mx-auto">
-                                </figure>
-                                <h3 class="font-size-20 mb-4 text-white">David Ebbinghouse</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
         </section>
 
         <!-- Service Section -->
@@ -567,23 +571,23 @@
 
 
 
-        <section class="page-section mb-0 bg-primary" id="about">
+        <section class="page-section mb-0 text-secondary" id="about">
             <div class="container p-3">
                 <!-- About Us Heading-->
                 <div class="text-center" data-aos="fade-up" >
-                    <h2 class="page-section-heading d-inline-block text-white">About Me</h2>
+                    <h2 class="page-section-heading d-inline-block">Our Story</h2>
                 </div>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light" data-aos="fade-up" >
+                <div class="divider-custom" data-aos="fade-up" >
                     <div class="divider-custom-line "></div>
                 </div>
 
-                <div class="row justify-content-center p-3 mb-4">
+                <div class="row justify-content-center p-3 mb-4 bg-thirdary rounded">
                     <div class="col-md-6 col-lg-4 p-3 h-100" data-aos="fade-up" >
                         <img class="img-fluid rounded" src="/assets/img/profile.jpeg">
                     </div>
                     <div class="col-md-6 col-lg-8 p-3 h-100" data-aos="fade-up" >
-                        <div class="d-flex flex-column align-items-center mb-3 bg-thirdary rounded p-3">
+                        <div class="d-flex flex-column align-items-center mb-3 p-3">
                             <div class="lead text-left p-1 text-white">In early 2007 I found my love for software development. The next 13 years have lead to a BS in Computer Science from Indiana University along with numerous projects in both the public and private sector. I started Unshifted Bit Development to share this love and passion for simple yet effective software solutions. </div>
                             <div class="text-right pt-1" data-aos="fade-up">
                                 <h5 class="d-inline-block text-white">Garrett Burton</h5>
@@ -599,96 +603,76 @@
         </section>
 
 
-
-
-
-
-
-        <!-- Contact Section -->
-        <section class="page-section" id="contact">
-            <div class="container bg-white p-5 rounded">
-                <!-- Contact Section Heading-->
-                <!-- About Us Heading-->
-                <div class="text-center" data-aos="fade-up" >
-                    <h2 class="page-section-heading d-inline-block">Contact</h2>
-                </div>
-                <!-- Icon Divider-->
-                <!-- Icon Divider-->
-                <div class="divider-custom" data-aos="fade-up" >
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Form -->
-                <div class="container contact-form">
-                    <div class="contact-image text-center" data-aos="fade-up">
-                        <img src="/assets/img/rocket_contact.png" alt="rocket_contact"/>
-                    </div>
-                    <form
-                          action="https://formspree.io/mgenowad"
-                          method="POST"
-                          >
-                        <h3 class="text-center mb-4" data-aos="fade-up">Drop Us a Message</h3>
-                        <div class="row justify-content-center" data-aos="fade-up">
-                            <div class="col-md-8">
-                                <input type="hidden" name="_subject" value="New UBD Message!" />
-                                <div class="form-group">
-                                    <label>Name:</label>
-                                    <input type="text" name="Name" class="form-control" value="" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Email:</label>
-                                    <input type="text" name="_replyto" class="form-control" value="" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Plan (optional):</label>
-                                    <select type="text" name="Plan" class="form-control" placeholder="Plan (Optional)" value="">
-                                        <option></option>
-                                        <option>Basic</option>
-                                        <option>Standard</option>
-                                        <option>Premium</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="Message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-                                </div>
-                                <div class="form-group text-center">
-                                    <button type="submit" class="btn no-border bg-secondary btn-primary ml-auto">Send Message</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </section>
-
         <!-- Footer -->
         <footer class="footer bg-secondary text-center">
             <div class="container">
                 <div class="row justify-content-center p-3">
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="mb-4" data-aos="fade-up">Unshifted Bit Development</h4>
+                        <h4 class="mb-1" data-aos="fade-up">Unshifted Bit Development</h4>
                         <p class="pre-wrap lead mb-0" data-aos="fade-up">We Make Web Development Simple</p>
                     </div>
 
                 </div>
-                <!-- Contact Section Content-->
-                <div class="row justify-content-center p-3">
-                    <div class="col-lg-4">
+
+
+                <div class="col-md-12 mb-3 mt-3">
+                    <div class="card mx-auto p-1" data-aos="fade-up">
+                        <div class="card-body bg-primary">
+                            <h5 class="card-title text-white text-center">Questions?</h5>
+                        </div>
+                        <form
+                              action="https://formspree.io/mgenowad"
+                              method="POST"
+                              >
+
+                            <div class="row justify-content-center p-3" data-aos="fade-up">
+                                <div class="col-md-8 p-3 bg-white rounded">
+                                    <input type="hidden" name="_subject" value="New UBD Message!" />
+                                    <div class="form-group">
+                                        <input type="text" name="Name" class="form-control" value="Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="_replyto" class="form-control" value="Email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <select type="text" name="Plan" class="form-control" placeholder="Plan (Optional)" value="">
+                                            <option>Plan (opitonal)</option>
+                                            <option>Basic</option>
+                                            <option>Standard</option>
+                                            <option>Premium</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="Message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button type="submit" class="btn btn-md btn-qoute btn-primary" id="premiumBtn">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-4">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="icon-contact mb-3" data-aos="fade-up"><i class="fas fa-mobile-alt"></i></div>
                             <div class="" data-aos="fade-up">Phone</div>
                             <div class="lead font-weight-bold" data-aos="fade-up"><a href="tel:+1-812-361-9922" data-aos="fade-up">1-812-361-9922</a></div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+
+                    <div class="col-4">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="icon-contact mb-3" data-aos="fade-up"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="" data-aos="fade-up">Location</div>
                             <div class="lead font-weight-bold" data-aos="fade-up">Bloomington, IN 47401</div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+
+                    <div class="col-4">
                         <div class="d-flex flex-column align-items-center mb-3">
                             <div class="icon-contact mb-3" data-aos="fade-up"><i class="far fa-envelope"></i></div>
                             <div class="" data-aos="fade-up">Email</div><a class="lead font-weight-bold text-light" href="mailto:contact@unshiftedbitdev.com" data-aos="fade-up">contact@unshiftedbitdev.com</a>
@@ -696,6 +680,7 @@
                     </div>
                 </div>
             </div>
+
         </footer>
         <!-- Copyright Section-->
         <section class="copyright bg-thirdary py-4 text-center text-white">
@@ -746,7 +731,7 @@
             });
 
             $(document).ready(function(){
-               
+
 
             });
         </script>
